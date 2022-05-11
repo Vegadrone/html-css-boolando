@@ -9,6 +9,7 @@
 
 .flex-container{
     display: flex;
+    justify-content: center;
 }
 
 /* HEADER */
@@ -17,6 +18,7 @@
     background-color: orangered;
     width: 100%; 
     position: fixed;
+    top:0
 }
 
 .head-container{ 
@@ -28,6 +30,8 @@
 
 .boolean-logo{
     height: 30px;
+    width: 140px;
+    margin-right: 50px;
 }
 
 .buttons{
@@ -43,4 +47,24 @@
 
 .icons{
     color: #fff;
+}
+
+/* MAIN */
+
+.main-container-top{
+    margin: 0 auto;
+    margin-top: 106px;
+    width: 80%;
+    flex-wrap: wrap; 
+}
+
+.main-container-bot {
+    margin: 0 auto;
+    margin-top: 106px;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+img{
+    width: calc(80% / 3 - 20px);
 }
