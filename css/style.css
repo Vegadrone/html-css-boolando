@@ -50,6 +50,19 @@
     color: #fff;
 }
 
+.fa-user {
+    padding-left: 5px;
+}
+
+.head-icons .fa-heart{
+    padding-left: 5px;
+}
+
+ .fa-bag-shopping {
+    padding-left: 5px;
+ }
+
+
 /* MAIN */
 .main-container {
     margin:  auto;
@@ -97,7 +110,7 @@
     background-color: red;
     color: #fff;
     position: absolute;
-    top: 0;
+    bottom: 120px;
     left: 0;
     padding: 5px;
     font-size: 16px;
@@ -108,13 +121,44 @@
     background-color: green;
     color: #fff;
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 120px;
+    left: 50px;
     font-size: 16px;
     font-weight: bold;
     padding: 5px;
     z-index: 1;
 }
+
+.left-margin-sus{
+    position: absolute;
+    left:0;   
+}
+
+.black-heart{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    position:absolute;
+    right:10px;
+    top:10px;
+    font-size: 30px;
+}
+
+.red-heart{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    position: absolute;
+    right:10px;
+    top:10px;
+    font-size: 30px;
+    color: red;
+    display: none;
+}
+
+.black-heart:hover + .red-heart{
+    display: block;
+    cursor: pointer;
+}
+
 .foto-b {
     /* width: 390px; */
     height: 590px;
@@ -128,23 +172,6 @@
 .foto-a:hover + .foto-b{
     display: block;
 }
-
-.heart{
-    background-color: #fff;
-    position:absolute;
-    padding: 5px;
-    z-index: 1;
-}
-
-.red-hover{
-    color:red;
-    display: none;
-}
-
-.fa-heart:hover + .red-hover{
-    display: block;
-}
-
 
 .price{
     color: red;
