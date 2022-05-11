@@ -1,9 +1,46 @@
+/* COMMONS */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-color: aquamarine;
+.flex-container{
+    display: flex;
+}
+
+/* HEADER */
+
+.head-bar {
+    background-color: orangered;
+    width: 100%; 
+    position: fixed;
+}
+
+.head-container{ 
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.boolean-logo{
+    height: 30px;
+}
+
+.buttons{
+    padding: 15px 0px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+.buttons:hover{
+    text-decoration: underline;
+}
+
+.icons{
+    color: #fff;
 }
