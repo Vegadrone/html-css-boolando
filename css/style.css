@@ -18,7 +18,8 @@
     background-color: orangered;
     width: 100%; 
     position: fixed;
-    top:0
+    top:0;
+    z-index: 9;
 }
 
 .head-container{ 
@@ -45,26 +46,148 @@
     text-decoration: underline;
 }
 
-.icons{
+.head-icons{
     color: #fff;
 }
 
 /* MAIN */
-
-.main-container-top{
-    margin: 0 auto;
+.main-container {
+    margin:  auto;
     margin-top: 106px;
     width: 80%;
-    flex-wrap: wrap; 
-}
-
-.main-container-bot {
-    margin: 0 auto;
-    margin-top: 106px;
-    width: 80%;
+    display: flex;
     flex-wrap: wrap;
+    /* border: #111111 dotted 2px; */
 }
 
-img{
-    width: calc(80% / 3 - 20px);
+.top-container{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: #111111 dotted 2px; */
+    padding-bottom: 50px;
+    
 }
+
+.bot-container{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: #111111 dotted 2px; */
+    padding-bottom: 50px;
+ 
+}
+
+.cards{
+    position: relative;
+    border: #111111 dotted 2px;
+    
+}
+
+
+.foto-a {
+    
+    height: 590px;
+    /* border: #111111 dotted 2px; */
+    margin-right: 10px;
+     
+}
+
+.foto-b {
+    /* width: 390px; */
+    height: 590px;
+    position: absolute;
+    top:0;
+    left:0;
+    margin-right: 10px;
+    display: none;
+}
+
+.foto-a:hover + .foto-b{
+    display: block;
+}
+
+.heart{
+    background-color: #fff;
+    position:absolute;
+    padding: 5px;
+    z-index: 1;
+}
+
+.red-hover{
+    color:red;
+    display: none;
+}
+
+.fa-heart:hover + .red-hover{
+    display: block;
+}
+
+.discount{
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    top: 10;
+    left: 0;
+    padding: 5px;
+    font-size: 16px;
+    z-index: 1;    
+}
+
+.sustain{
+    background-color: green;
+    color: #fff;
+    position: absolute;
+    top:10;
+    left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    z-index: 1;
+}
+
+.price{
+    color: red;
+    font-weight: bold;
+}
+
+.price-cut{
+    color: black;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+
+
+/* FOOTER */
+.footer-bar{
+    background-color: #111111;
+    color:#fff;
+}
+
+.footer-container{
+    width: 80%;
+    margin:0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-brands{
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-text{
+    padding:15px 0px;
+    font-size: 14px;
+}
+
+.footer-boolean{
+    text-align: start;
+    padding-top: 15px;
+}
+
+
+
