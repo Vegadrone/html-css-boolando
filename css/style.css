@@ -81,19 +81,40 @@
 
 .cards{
     position: relative;
-    border: #111111 dotted 2px;
+    /* border: #111111 dotted 2px; */
     
 }
 
 
 .foto-a {
-    
     height: 590px;
     /* border: #111111 dotted 2px; */
     margin-right: 10px;
      
 }
 
+.discount {
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.sustain {
+    background-color: green;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    z-index: 1;
+}
 .foto-b {
     /* width: 390px; */
     height: 590px;
@@ -124,28 +145,6 @@
     display: block;
 }
 
-.discount{
-    background-color: red;
-    color: #fff;
-    position: absolute;
-    top: 10;
-    left: 0;
-    padding: 5px;
-    font-size: 16px;
-    z-index: 1;    
-}
-
-.sustain{
-    background-color: green;
-    color: #fff;
-    position: absolute;
-    top:10;
-    left: 0;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 5px;
-    z-index: 1;
-}
 
 .price{
     color: red;
